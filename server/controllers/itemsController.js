@@ -1,6 +1,6 @@
 // ✅ controllers/itemsController.js (updated to use memory buffer and Cloudinary)
 import itemModel from '../models/Items.js';
-import { uploadOnCloudinary } from '../utils/Cloudinary.js';
+import { uploadOnCloudinary } from '../utils/cloudinary.js';
 import transporter from "../config/nodemailer.js";
 
 export const getAllItems = async (req, res) => {
