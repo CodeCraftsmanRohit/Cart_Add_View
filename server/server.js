@@ -25,7 +25,7 @@ import itemsRoute from './routes/items.js';
 app.use(express.json());
 
 
-const aloowedOrigins =['http://localhost:5173']
+const aloowedOrigins =['http://localhost:5173','https://viewnadd.onrender.com']
 
 // Enable CORS and allow credentials (cookies, auth headers) in cross-origin requests
 app.use(cors({origin:aloowedOrigins, credentials: true }));
