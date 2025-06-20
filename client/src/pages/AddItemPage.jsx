@@ -36,7 +36,7 @@ function AddItemPage() {
     });
 
     try {
-      const res = await axios.post("http://localhost:4000/api/add", data, {
+      const res = await axios.post("https://cart-add-view.onrender.com/api/add", data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

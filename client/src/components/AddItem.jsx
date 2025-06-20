@@ -33,7 +33,7 @@ const AddItem = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/items', formData);
+      await axios.post('https://cart-add-view.onrender.com/api/items', formData);
       setSuccess(true);
       setFormData({
         name: '',

@@ -11,7 +11,7 @@ function ViewItems() {
   // Fetch items on mount
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/view")
+      .get("https://cart-add-view.onrender.com/api/view")
       .then((res) => setItems(res.data.items))
       .catch((err) => {
         console.error("Error fetching items:", err);
@@ -51,7 +51,7 @@ function ViewItems() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:4000/api/enquire", {
+      const res = await axios.post("https://cart-add-view.onrender.com/api/enquire", {
         name,
         email,
         itemName: selectedItem.name,
